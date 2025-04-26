@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gradient Copy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body class="h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-xl flex items-center justify-center flex-col shadow-lg ring-4">
+    <div 
+      id="gred"
+      class="mb-4 text-center font-mono text-sm text-blue-700 p-2 border border-blue-300 rounded w-full break-words"
+    ></div>
+ 
+    <button 
+      id="copyBtn"
+      class="mb-4 flex items-center gap-2  hover:bg-blue-400 text-black px-3 py-1 rounded hover:bg-gray-300"
+      title="Copy Gradient"
+    >
+      <i class="material-icons text-black">content_copy</i>
+    </button>
+
+    <button 
+      id="btn" 
+      class="bg-gray-700 text-white px-4 py-2 font-semibold rounded-lg hover:bg-gray-800"
+    >
+      Generate
+    </button>
+  </div>
+
+  <script src="gredient.js"></script>
+</body>
+</html>
