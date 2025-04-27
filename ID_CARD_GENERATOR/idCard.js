@@ -16,6 +16,17 @@ let photoPreview = document.querySelector("#photoPreview");
 button.addEventListener("click", (e) => {
   e.preventDefault(); // Prevent form submission
 
+  if (
+    name.value.trim() === "" ||
+    course.value.trim() === "" ||
+    branch.value.trim() === "" ||
+    enroll.value.trim() === "" ||
+    photo.files.length === 0
+  ) {
+    alert("Please fill all the fields before submitting!");
+    return; // Stop further execution
+  }
+
   // Set card text values
   stdname.innerText = `Name: ${name.value}`;
   stdcourse.innerText = `Course: ${course.value}`;
