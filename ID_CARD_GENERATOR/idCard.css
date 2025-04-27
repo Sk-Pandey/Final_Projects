@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://i.ibb.co/Jwv9PB3N/Sage.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: linear-gradient(to right , #DADC5E, #9519E6); */
+  } 
+  #Card{ 
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+  }
+  form {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(2px);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-radius: 10px;
+    
+  }
+  label {
+    display: block;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }

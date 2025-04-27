@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micro Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="idCard.css" />
+  </head>
+  <body class="bg-white h-screen flex justify-center items-center">
+    <form>
+      <h2 class="text-center font-bold text-2xl">Student Details</h2>
+
+      <label for="name">Student Name:</label>
+      <input type="text" id="stdname" name="name" required />
+
+      <label for="course">Course:</label>
+      <input type="text" id="stdcourse" name="course" required />
+
+      <label for="branch">Branch:</label>
+      <input type="text" id="stdbranch" name="branch" required />
+
+      <label for="enroll">Enrollment Number:</label>
+      <input type="text" id="stdenroll" name="enroll" required />
+      <label for="photo">Upload Your Photo:</label>
+      <input type="file" id="stdphoto" name="photo" accept="image/*" required />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="Card" class="border-1 border-white rounded-2xl hidden py-3">
+      <div class="flex justify-center items-center space-x-3">
+        <div>
+          <img
+            class="w-15 h-15"
+            src="https://i.ibb.co/nqVz4YDM/sage-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <div class="flex flex-col justify-center items-center space-x-3">
+          <strong class="text-red-600 text-2xl letter-space-3 tracking-wide"
+            >SAGE UNIVERSITY</strong
+          >
+          <small class="text-red-600 font-semibold text-lg">INDORE</small>
+        </div>
+      </div>
+      <div class="bg-yellow-300 px-5 font-[cursive] font-semibold">
+        Transforming Your Passion into profession
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        <strong>Institute of Advance Computing</strong>
+        <img id="photoPreview" class="h-25 2-20 my-2" src="" alt="Student Photo" />
+      </div>
+      <div class="pl-2 font-semibold flex flex-col space-y-2">
+        <p id="name" class="uppercase">Name: SHASHIKANT PANDEY</p>
+        <p id="course"class="capitalize">Course: Bachelor of Technology(Hons.)</p>
+        <p id="branch"class="capitalize">Branch: Computer Science and Technology</p>
+      </div>
+      <div class="mt-4 pl-2 font-semibold">
+        <p id="enroll">Enroll.No: 31092</p>
+        <p>Issue Date: 05-Feb-2025</p>
+        <p>Valid Upto: 30-Jun-2028</p>
+      </div>
+      <div class="flex">
+        <div class="w-4/7"></div>
+        <div
+          class="flex flex-col justify-center items-center font-semibold text-[0.8rem]"
+        >
+          <p>Dr. Manish Choudhary</p>
+          <p>Registrar</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="idCard.js"></script>
+  </body>
+</html>
