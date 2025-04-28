@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -31,14 +36,21 @@ body {
     font-weight: 600;
     margin-top: 15px;
   }
-  input, select {
+  input{
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 2px solid #000000;
     border-radius: 5px;
+    caret-color: blue;
+  }
+  input:focus{
+    outline: none;
   }
   button {
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
     margin-top: 20px;
     padding: 10px 15px;
     background-color: #4CAF50;
@@ -46,7 +58,9 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-sizing: border-box;
   }
   button:hover {
-    background-color: #45a049;
+    background-color: #2df134;
+    
   }

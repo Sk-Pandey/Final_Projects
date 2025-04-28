@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="Guess.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="flex h-screen  items-center bg-gray-100">
-    <div class=" bg-white-300 p-10 mx-auto rounded-2xl text-center">
-        <label for="number" class="text-xl  font-semibold">Guess:</label> <input id="number" type="number" placeholder="  Enter Number 1-10" class="border-2 border-gray-600 rounded pl-2">
+<body class="flex h-screen  items-center bg-gradient-to-r from-purple-500 to-pink-500">
+    <div class="p-10 mx-auto rounded-2xl text-center border-t-2 border-b-2 border-t-white">
+        <label for="number" class="text-xl  font-semibold">Guess Number</label> <input id="number" type="number" placeholder="  Enter Number 1-10" class="border-b-2 w-[60%] border-b-red-600  pl-2 focus:outline-none caret-red-700 placeholder:text-center placeholder:font-semibold mt-4">
         <br> <br>
-        <button id="submit" class="mx-auto block mt-3  bg-rose-600 text-white py-2 px-3 font-semibold rounded-xl">Submit</button>
-        <button id="newgame" class="mx-auto block mt-3  bg-rose-600 text-white py-2 px-3 font-semibold rounded-xl hidden">New Game</button>
+        <button id="submit" class="mx-auto block mt-3  bg-rose-600 text-white py-2 px-3 font-semibold rounded-xl uppercase cursor-pointer">Submit</button>
+        <button id="newgame" class="mx-auto block mt-3  bg-rose-600 text-white py-2 px-3 font-semibold rounded-xl hidden uppercase cursor-pointer">New Game</button>
        
     </div>
     <script src="Guess.js"></script>
