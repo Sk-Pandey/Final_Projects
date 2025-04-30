@@ -80,6 +80,7 @@ form{
     
 }
 .todo .todo-text{
+    font-variant: small-caps;
     padding: 15px;
     padding-right: 0;
     flex-grow: 1; /* so that delete button always at corner */
